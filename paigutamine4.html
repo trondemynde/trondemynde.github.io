@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paigutamine 4</title>
+    <link rel="icon" type="image/x-generic" href="favicon.png">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        header,
+        footer {
+            width: 60%;
+            padding: 2rem;
+            background-color: #333;
+            color: rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        main {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        #big-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 60%;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .container-group {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        section {
+            width: 30%;
+            border: 1px solid #ccc;
+            padding: 1rem;
+            margin: 1rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                align-items: stretch;
+            }
+
+            .container-group {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Paigutamine 4</h1>
+        <img src="favicon.png" alt="" style="width: 120px;height: 120px;">
+    </header>
+    <main>
+        <section id="big-container">
+            <article>
+                <h2 dir="rtl">Global attributes</h2>
+                <p autocapitalize="">Globaalseid omadusi võib seadistada kõikidele HTML elementidele. Mõned aga ei
+                    pruugi aga osadel elementidel efekti anda.</p>
+                <form action="" inert>
+                    <input type="text" autofocus="" placeholder="autofocusega">
+                    <input spellcheck="true" type="email" enterkeyhint="enter"
+                        placeholder="type=e-mail, keyhint=enter">
+                    <input type="email" enterkeyhint="next" placeholder="enterkeyhint=next">
+                    <input type="password" placeholder="*******">
+                    <input type="numeric" placeholder="0123456789">
+                    <input type="tel" placeholder="+372 544 233 5555">
+                    <input type="url" placeholder="http://www.domeen.ee">
+                </form>
+            </article>
+        </section>
+        <div class="container-group">
+            <section id="container1" class="rectangle rectangle-7" draggable="true" class id contenteditable="true"
+                data-content="1">
+                <article>
+                    <p lang="en-GB">This paragraph is defined as British English.</p>
+                    <p lang="fr">Ce paragraphe est défini en français.</p>
+                    <button popovertarget="my-popover">Open Popover</button>
+                    <div popover="" id="my-popover">midaaaaaaaaaa!</div>
+                </article>
+            </section>
+            <section id="container2">
+                <div class="rectangle rectangle-5">
+                    <ul>
+                        <li>item 1</li>
+                        <li>item 2</li>
+                        <li>item 3</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="container3">
+                <p>
+                    <div class="nav"><button onClick="window.location.reload();">refresh</button></div>
+                    <div class="header-nav"><input type="text" placeholder="Search.."></div>
+                </p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>See on footer</p>
+    </footer>
+</body>
+
+</html>
