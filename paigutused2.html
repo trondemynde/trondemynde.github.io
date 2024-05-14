@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+
+    /* labelid kõrvuti */
+    @media (min-width: 980px) {
+
+    }
+
+    /* labelid üksteise all */
+    @media (max-width: 979px) {
+      body {
+        margin: 0;
+        background-color:red
+      }
+    }
+    
+    form {
+      text-align: center;
+      background: #bbca64;
+      width: 400px;
+      border: solid rgb(116, 102, 102);
+      position: relative;
+      padding: 5%;
+      margin: auto;
+    }
+    h1{
+      text-align: center;
+      position: relative;
+      margin: 0 auto;
+    }
+    .form-row {
+      text-align: center;
+      margin: 0 auto;
+    }
+
+  </style>
+  <title>Paigutamine 2: Skaleeruv vorm</title>
+</head>
+
+<body>
+  <h1>Paigutamine 2: Skaleeruv vorm</h1>
+  <form action="" method="get" class="form-example">
+    <div class="form-row">
+      <label for="name">Sinu nimi:</label>
+      <input type="text" name="name" id="name" placeholder="Sinu nimi" required>
+    </div>
+    <div class="form-row" class="error">
+      <label for="email">Sinu e-mail:</label>
+      <input type="email" name="email" id="email" placeholder="Sinu email" required>
+    </div>
+    <div class="form-row">
+      <label for="b-day">Sinu sünnikuupäev:</label>
+      <input type="date" id="b-day" name="b-day" value="2018-07-22" min="1991-01-02" max="2021-12-31">
+    </div>
+    <div class="form-row">
+      <label for="phone">Sinu tel number:</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div class="form-row">
+      <label for="story">Kirjuta endast:</label>
+      <textarea id="story" name="story" placeholder="..." rows="5" cols="33"></textarea>
+    </div>
+    <div class="form-row">
+      <label for="pilt">vali pilt</label>
+
+      <input type="file" id="pilt" name="pilt" accept="image/png, image/jpeg" />
+    </div>
+    <div class="form-row">
+      <legend>kas soovite edaspidi kirju saada meilt</legend>
+
+      <div>
+      <input type="checkbox" id="jah" name="jah" checked />
+      <label for="jah">jah</label>
+      </div>
+  
+      <div>
+      <input type="checkbox" id="ei" name="ei" />
+      <label for="ei">ei</label>
+      </div>
+    </div>
+    <div class="form-row">
+      <p>Vali oma lemmik värv</p>
+
+      <div>
+      <input type="color" id="värv" name="värv" value="#e66465" />
+      <label for="värv">värv</label>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <p>Kui palju teile meeldib see leht?</p>
+
+      <div>
+      <input type="range" id="like" name="like" min="0" max="10" />
+      <label for="like"></label>
+      </div>
+    </div>
+    <div class="form-row">
+      <label for="appt">Mis kell te täitsite küsimused?</label>
+
+      <input type="time" id="appt" name="appt" min="09:00" max="18:00" required />
+    </div>
+
+    <div class="form-row">
+      <input type="submit" value="Saada">
+    </div>
+  </form>
+</body>
+
+</html>
