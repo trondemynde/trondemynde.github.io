@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paigutamine3</title>
+</head>
+<style>
+.container {
+    background: gray;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+}
+table {
+    margin: auto;
+    width: 500px;
+    height: 300px;
+    top: -10px;
+}
+td {
+    background: white;
+    text-align: center;
+
+}
+thead {
+    border: solid black 1px;
+    background: black;
+}
+th {
+    color: white;
+}
+.vl {
+  border-left: 1px solid black;
+  height: 1px;
+  left: 50%;
+}
+.hl {
+  border-bottom: 1px solid blue;
+  height: 1px;
+  left: 50%;
+}
+.hh {
+    
+}
+</style>
+<body>
+    <div class="container">
+    <table style="border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th colspan="2" style="padding: 1rem; font-size: large;">uudiskiri</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style=" padding: 1rem; border-right: 1px solid black; border-top: 1px solid black; border-left: 1px solid black; text-align: left;">Teine pealkiri</td>
+            <td style=" padding: 1rem; border-right: 1px solid black; border-top: 1px solid black; border-left: 1px solid black; text-align: left;">Kolmas pealkiri</td>
+          </tr>
+          <tr class="hh">
+            <td style="padding: 1rem; border: 1px solid #000; border-top: none;">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</td>
+            <td style="padding: 1rem; border: 1px solid #000; border-top: none;">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.</td>
+          </tr>
+          <tr>
+            <td style="padding: 1rem; text-align: left; ">Kolmas pealkiri</td>
+            <td class="vl" style="padding: 1rem; text-align: left;">Kolmas pealkiri</td>
+          </tr>
+          <tr  class="hl">
+            <td style="padding: 1rem;">At vero eos et accusamus et iusto praesentium.</td>
+            <td class="vl" style="padding: 1rem;">At vero eos et accusamus et iusto praesentium.</td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align: center; padding: 1rem; background: lightblue; height: 50px;">
+              <strong>NELJAS PEALKIRI</strong><br>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
+              <br>
+              <button style="padding: 0.5rem; margin-top: 1rem; background-color: blue; color: #fff; border: none;">LINK</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</body>
+</html>
